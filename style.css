@@ -1,0 +1,542 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: linear-gradient(100deg, #daedff, hsl(60, 100%, 91%), #ffddf9);
+    /* background: url("/bg2.jpg");
+    background-blend-mode: screen;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.container {
+    background-color: rgb(139, 251, 255);
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    box-shadow: black 0 0 15px -10px;
+}
+
+
+/* ...............container 1............ */
+
+.subcontainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 69%;
+    border-radius: 50%;
+    border: 1px solid rgb(77, 77, 77);
+    padding: 2px;
+}
+
+.name {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: rgb(58, 58, 58);
+}
+
+.name h1 {
+    font-size: 3vmax;
+}
+
+a.fa {
+    text-decoration: none;
+    width: 35px;
+    color: #2d2d2d;
+    font-size: 20px;
+}
+
+.about {
+    text-transform: capitalize;
+    margin-top: 15px;
+    color: rgb(48, 48, 48);
+}
+
+.about a {
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;
+    color: rgb(36, 36, 36);
+    box-shadow: black 0px 5px 5px -4px;
+    border: 1px solid rgb(94, 94, 94);
+    background-color: rgba(255, 20, 145, 0);
+}
+
+.about a:active {
+    transform: translate(1000px, 100px);
+    box-shadow: none;
+}
+
+
+/* .............container 2.......... */
+
+.subcontainer2 {
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2px;
+    height: 10%;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    width: 90px;
+    text-align: center;
+    transition: 1s;
+}
+
+li:hover {
+    transform: translate(12px);
+}
+
+li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    padding: 5PX;
+    transition: 0.2s;
+}
+
+li a:hover {
+    letter-spacing: 2px;
+}
+
+
+/* ............sections.......... */
+
+.contentbox {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+.sec {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------section a------------ */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ns {
+    margin-bottom: 75px;
+    width: max-content;
+    height: auto;
+    text-align: center;
+}
+
+.ns h1 {
+    color: rgb(51, 51, 51);
+    text-shadow: -2px -2px 0px;
+    font-size: 2em;
+    background: linear-gradient(to right, rgb(255 126 126), rgb(88 214 255), rgb(255 100 225), #6fec3b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.ns h5 {
+    color: rgb(67, 67, 67);
+}
+
+.ns img {
+    display: none;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+/* -----------section b----------- */
+
+.skills {
+    display: flex;
+    padding: 5px;
+}
+
+.skillbox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress {
+    margin-bottom: 12px;
+}
+
+.skillbox h1 {
+    text-align: center;
+}
+
+.skillnp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barframe {
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+    height: 11px;
+    padding: 1px;
+    border: 2px solid rgb(0, 0, 0);
+    align-items: center;
+}
+
+.mainbar {
+    width: 68%;
+    height: 100%;
+    border-radius: 2px;
+    background: rgb(40, 125, 204);
+}
+
+.knowladgebox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.knowladgebox h1 {
+    text-align: center;
+}
+
+.kg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+}
+
+.d {
+    width: max-content;
+    background: rgb(0, 148, 197);
+    padding: 3px;
+    color: white;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+
+/* -----------section c----------- */
+
+.service h1 {
+    text-align: center;
+}
+
+.sbb {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+}
+
+.serviceblock {
+    background-color: rgb(210, 247, 255);
+    width: 30%;
+    height: 80%;
+    border-radius: 9px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.serviceblock:hover {
+    transform: translateY(-8px);
+    box-shadow: black 0px 8px 13px -6px;
+}
+
+.workicon {
+    text-align: center;
+    padding-bottom: 19px;
+}
+
+.workicon .image {
+    width: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(175, 240, 255);
+}
+
+.workicon h2 {
+    font-size: 2.6vmax;
+}
+
+.detals p {
+    letter-spacing: 2px;
+    line-height: 1.3em;
+}
+
+
+/* ---------section d-------------- */
+
+.works {
+    text-align: center;
+}
+
+.wbox {
+    height: 94%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.wbox a {
+    padding: 10px;
+    text-decoration: none;
+    width: max-content;
+    height: auto;
+}
+
+.wbox a img {
+    padding: 1px;
+    border: 1px solid black;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.wbox a img:hover {
+    transform: translateY(-3px);
+    box-shadow: black 0px 8px 13px -6px;
+}
+
+
+/* ------------secton e--------- */
+
+section#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox {
+    background-color: #00e7f74a;
+    border-radius: 4px;
+    padding: 50px;
+}
+
+.formbox h2 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: black 0 0 2px;
+}
+
+form {
+    max-width: 300px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    border-radius: 3px;
+    padding: 3px;
+    outline: none;
+    border: none;
+}
+
+#submit {
+    width: 50%;
+    text-align: center;
+    margin-top: 22px;
+    float: right;
+    box-shadow: rgb(0, 255, 166) inset 0px 0px 0px 15px;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    box-shadow: none;
+    background-color: rgb(16, 16, 16);
+    color: white;
+}
+
+
+/* ---------laoder-----------  */
+
+.loaderbox {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 35%, rgb(255, 78, 202));
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: anime 1s linear infinite;
+}
+
+@keyframes anime {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    inset: 17px 17px 0 0;
+    border-radius: 50%;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    background: rgb(55, 255, 255);
+    width: 24px;
+    height: 24px;
+    left: 58px;
+    top: 27px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(55, 255, 255), 0 0 15px rgb(55, 255, 255), 0 0 25px rgb(55, 255, 255), 0 0 45px rgb(55, 255, 255);
+}
+
+
+/* --------- media query----------- */
+
+@media screen and (max-width:650px) {
+    body {
+        height: auto;
+        display: block;
+        width: 100%;
+    }
+    .container {
+        width: auto;
+        height: auto;
+        border-radius: 0px;
+    }
+    .subcontainer1 {
+        display: none;
+    }
+    header {
+        height: 52px;
+        position: fixed;
+        background-color: ivory;
+    }
+    .subcontainer2 {
+        width: 100%;
+        scroll-behavior: smooth;
+        border-radius: 0px;
+    }
+    .sec {
+        width: 100%;
+        height: 100vh;
+    }
+    .ns img {
+        display: block;
+    }
+    .contentbox {
+        overflow: initial;
+        scroll-behavior: smooth;
+    }
+    .skillbox {
+        width: 70%;
+    }
+    .skills {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .knowladgebox {
+        width: 100%;
+    }
+    .kg {
+        width: 100%;
+        display: flex;
+    }
+    .service {
+        height: 120vh;
+    }
+    .sbb {
+        flex-direction: column;
+        justify-content: center;
+        height: 95%;
+    }
+    .serviceblock {
+        margin: 5px;
+        width: 80%;
+        height: max-content;
+    }
+    .wbox {
+        height: 25%;
+        flex-direction: column;
+    }
+    .work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wbox a img {
+        width: 22%;
+    }
+    .detals p {
+        text-align: center;
+    }
+    li :hover {
+        transform: translate(0px);
+    }
+}
