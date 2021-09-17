@@ -5,6 +5,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     height: 100vh;
@@ -21,7 +23,7 @@ body {
 }
 
 .container {
-    background-color: rgb(139, 251, 255);
+    background-color: rgb(91 218 234);
     width: 95vw;
     height: 90vh;
     display: flex;
@@ -58,6 +60,8 @@ body {
 
 .name h1 {
     font-size: 3vmax;
+    font-family: 'Varela Round', sans-serif;
+    color: #565656;
 }
 
 a.fa {
@@ -69,7 +73,7 @@ a.fa {
 
 .about {
     text-transform: capitalize;
-    margin-top: 15px;
+    margin-top: 55px;
     color: rgb(48, 48, 48);
 }
 
@@ -78,7 +82,7 @@ a.fa {
     padding: 4px;
     border-radius: 2px;
     color: rgb(36, 36, 36);
-    box-shadow: black 0px 5px 5px -4px;
+    box-shadow: black 0px 3px 5px -4px;
     border: 1px solid rgb(94, 94, 94);
     background-color: rgba(255, 20, 145, 0);
 }
@@ -92,9 +96,11 @@ a.fa {
 /* .............container 2.......... */
 
 .subcontainer2 {
+    box-shadow: -3px 0px 20px -11px;
     width: 80%;
+    border: 1px solid #00d5e8;
     border-radius: 20px;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(240, 240, 240);
 }
 
 header {
@@ -148,6 +154,17 @@ li a:hover {
     overflow: auto;
 }
 
+.contentbox::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(110, 233, 255), rgb(92, 255, 198));
+    border-radius: 30px;
+}
+
 .sec {
     width: 100%;
     height: 100%;
@@ -195,6 +212,7 @@ li a:hover {
 .skills {
     display: flex;
     padding: 5px;
+    justify-content: center;
 }
 
 .skillbox {
@@ -223,9 +241,9 @@ li a:hover {
     width: 100%;
     display: flex;
     border-radius: 2px;
-    height: 11px;
+    height: 15px;
     padding: 1px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(181, 181, 181);
     align-items: center;
 }
 
@@ -233,13 +251,13 @@ li a:hover {
     width: 68%;
     height: 100%;
     border-radius: 2px;
-    background: rgb(40, 125, 204);
+    background: rgb(67, 185, 206);
 }
 
 .knowladgebox {
     width: 50%;
+    display: none;
     height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -258,7 +276,7 @@ li a:hover {
 
 .d {
     width: max-content;
-    background: rgb(0, 148, 197);
+    background: rgb(143, 143, 143);
     padding: 3px;
     color: white;
     margin: 4px;
@@ -280,11 +298,11 @@ li a:hover {
 }
 
 .serviceblock {
-    background-color: rgb(210, 247, 255);
+    background-color: rgb(255, 255, 255);
     width: 30%;
     height: 80%;
     border-radius: 9px;
-    padding: 7px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     transition: 0.3s;
@@ -292,7 +310,7 @@ li a:hover {
 
 .serviceblock:hover {
     transform: translateY(-8px);
-    box-shadow: black 0px 8px 13px -6px;
+    box-shadow: rgb(61, 61, 61) 0px 8px 13px -6px;
 }
 
 .workicon {
@@ -304,16 +322,20 @@ li a:hover {
     width: 50px;
     padding: 8px;
     border-radius: 50%;
-    background-color: rgb(175, 240, 255);
+    background-color: rgb(0, 238, 255);
 }
 
 .workicon h2 {
-    font-size: 2.6vmax;
+    font-size: 2.5vmax;
+    color: #707070;
 }
 
 .detals p {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.3em;
+    color: #5f5f5f;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 
@@ -340,7 +362,7 @@ li a:hover {
 
 .wbox a img {
     padding: 1px;
-    border: 1px solid black;
+    border: 1px solid rgb(158, 158, 158);
     width: 100%;
     transition: 0.2s;
 }
@@ -360,15 +382,15 @@ section#contact {
 }
 
 .formbox {
-    background-color: #00e7f74a;
-    border-radius: 4px;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    border: 1px solid #00d5e8;
     padding: 50px;
 }
 
 .formbox h2 {
     text-align: center;
-    color: #ffffff;
-    text-shadow: black 0 0 2px;
+    color: #777777;
 }
 
 form {
@@ -395,9 +417,10 @@ textarea {
 #submit {
     width: 50%;
     text-align: center;
+    border: 1px solid #00d5e8;
     margin-top: 22px;
     float: right;
-    box-shadow: rgb(0, 255, 166) inset 0px 0px 0px 15px;
+    box-shadow: rgb(255, 255, 255) inset 0px 0px 0px 15px;
     transition: 0.5s;
 }
 
@@ -502,6 +525,7 @@ textarea {
         align-items: center;
     }
     .knowladgebox {
+        display: block;
         width: 100%;
     }
     .kg {
